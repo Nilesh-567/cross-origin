@@ -73,7 +73,7 @@
   
       try {
         console.log('Uploading file...');
-        const response = await fetch('http://localhost:3000', {
+        const response = await fetch('https://cross-origin-dbww.onrender.com', {
           method: 'POST',
           body: formData,
         });
