@@ -73,7 +73,7 @@
   
       try {
         console.log('Uploading file...');
-        const response = await fetch('https://cross-origin-dbww.onrender.com', {
+        const response = await fetch('https://cross-origin-dbww.onrender.com/test', {
           method: 'POST',
           body: formData,
         });
@@ -82,7 +82,7 @@
   
         const data = await response.json();
         console.log('Response from server:', data);
-        responseUrl.textContent = `Uploaded URL: ${data.url}`;
+        responseUrl.textContent = `Uploaded URL:` ;//${data.url}`;
         responseUrl.style.display = 'block';
       } catch (error) {
         console.error('Error during upload:', error);
