@@ -72,8 +72,9 @@
       uploadButton.disabled = true;
   
       try {
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || 'https://cross-origin-dbww.onrender.com'; 
         console.log('Uploading file...');
-        const response = await fetch('https://cross-origin-dbww.onrender.com', {
+        const response = await fetch(`${backendUrl}` , {
           method: 'POST',
           body: formData,
         });
