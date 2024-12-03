@@ -82,7 +82,7 @@
   
         const data = await response.json();
         console.log('Response from server:', data);
-        responseUrl.textContent = `Uploaded URL:` ;//${data.url}`;
+        responseUrl.textContent = `Uploaded URL: ${data.url}`;
         responseUrl.style.display = 'block';
       } catch (error) {
         console.error('Error during upload:', error);
